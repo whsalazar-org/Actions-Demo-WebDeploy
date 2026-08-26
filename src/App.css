@@ -1,0 +1,30 @@
+.app {
+  margin: auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  filter: drop-shadow(var(--shadow));
+}
+
+.counter {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid var(--accent-border);
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: var(--accent);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
